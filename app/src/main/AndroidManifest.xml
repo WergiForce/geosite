@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.wit.geosite">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".main.MainApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Geosite">
+        <activity
+            android:name=".views.map.GeositeMapView"
+            android:exported="true"
+            android:label="@string/title_activity_geosite_maps"
+            android:theme="@style/Theme.Geosite.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".views.location.EditLocationView"
+            android:exported="true"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".views.geositelist.GeositeListView"
+            android:exported="true" />
+        <activity
+            android:name=".views.splashscreen.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.login.LoginView"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTop"
+            android:exported="true">
+        </activity>
+        <activity android:name=".views.geosite.GeositeView" />
+    </application>
+
+</manifest>

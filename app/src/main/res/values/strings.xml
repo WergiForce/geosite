@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Geosite</string>
+    <string name="button_addGeosite">Add Geosite</string>
+    <string name="hint_geositeTitle">Geosite Title</string>
+    <string name="hint_geositeDescription">Description </string>
+    <string name="hint_geositeIGHtheme">IGH Theme </string>
+    <string name="menu_addGeosite">Add</string>
+    <string name="menu_mapMode">Map Mode</string>
+    <string name="menu_cancelGeosite">Cancel</string>
+    <string name="enter_geosite_title"> Please enter a Geosite Title </string>
+    <string name="save_geosite"> Save Geosite </string>
+    <string name="button_addImage"> Add Image </string>
+    <string name="select_geosite_image">Select geosite image</string>
+    <string name="change_geosite_image">Change geosite image</string>
+    <string name="button_location">Set Location</string>
+    <string name="title_activity_map">Map</string>
+    <string name="menu_saveGeosite">Save</string>
+    <string name="menu_deleteGeosite">Delete</string>
+    <string name="title_activity_geosite_maps">Map of All Geosites</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="title_activity_login"> Signup/Login to Geosite</string>
+    <string name="menu_showMap">Show Map</string>
+    <string name="menu_logout">Logout</string>
+
+    <string-array name="ighthemes">
+        <item>01: Karst</item>
+        <item>02: Precambrian to Devonian Palaeontology</item>
+        <item>03: Carboniferous to Pliocene Palaeontology</item>
+        <item>04: Cambrian to Silurian</item>
+        <item>05: Precambrian</item>
+        <item>06: Mineralogy</item>
+        <item>07: Quaternary</item>
+        <item>08: Lower Carboniferous</item>
+        <item>09: Upper Carboniferous and Permian</item>
+        <item>10: Devonian</item>
+        <item>11: Igneous Intrusions</item>
+        <item>12: Mesozoic and Cenozoic</item>
+        <item>13: Coastal Geomorphology</item>
+        <item>14: Fluvial and Lacustrian Geomorphology</item>
+        <item>15: Economic Geology</item>
+        <item>16: Hydrogeology</item>
+    </string-array>
+</resources>
