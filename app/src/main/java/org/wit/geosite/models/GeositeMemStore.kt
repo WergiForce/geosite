@@ -27,7 +27,10 @@ class GeositeMemStore : GeositeStore {
         if (foundGeosite != null) {
             foundGeosite.title = geosite.title
             foundGeosite.description = geosite.description
-            foundGeosite.ightheme = geosite.ightheme
+            foundGeosite.landowner = geosite.landowner
+            foundGeosite.phone = geosite.phone
+            foundGeosite.drilling = geosite.drilling
+            foundGeosite.comment = geosite.comment
             foundGeosite.image = geosite.image
             foundGeosite.location = geosite.location
             logAll()

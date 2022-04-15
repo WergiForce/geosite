@@ -3,7 +3,9 @@
     <string name="button_addGeosite">Add Geosite</string>
     <string name="hint_geositeTitle">Geosite Title</string>
     <string name="hint_geositeDescription">Description </string>
-    <string name="hint_geositeIGHtheme">IGH Theme </string>
+    <string name="hint_geositeLandownerName">Landowner Name </string>
+    <string name="hint_geositePhone">Phone </string>
+    <string name="hint_geositeComment">Comment </string>
     <string name="menu_addGeosite">Add</string>
     <string name="menu_mapMode">Map Mode</string>
     <string name="menu_cancelGeosite">Cancel</string>
@@ -30,22 +32,9 @@
     <string name="menu_showMap">Show Map</string>
     <string name="menu_logout">Logout</string>
 
-    <string-array name="ighthemes">
-        <item>01: Karst</item>
-        <item>02: Precambrian to Devonian Palaeontology</item>
-        <item>03: Carboniferous to Pliocene Palaeontology</item>
-        <item>04: Cambrian to Silurian</item>
-        <item>05: Precambrian</item>
-        <item>06: Mineralogy</item>
-        <item>07: Quaternary</item>
-        <item>08: Lower Carboniferous</item>
-        <item>09: Upper Carboniferous and Permian</item>
-        <item>10: Devonian</item>
-        <item>11: Igneous Intrusions</item>
-        <item>12: Mesozoic and Cenozoic</item>
-        <item>13: Coastal Geomorphology</item>
-        <item>14: Fluvial and Lacustrian Geomorphology</item>
-        <item>15: Economic Geology</item>
-        <item>16: Hydrogeology</item>
+    <string-array name="todrill">
+        <item>Will Drill?</item>
+        <item>Yes</item>
+        <item>No</item>
     </string-array>
 </resources>

@@ -47,7 +47,10 @@ class GeositeJSONStore(private val context: Context) : GeositeStore {
         if (foundGeosite != null) {
             foundGeosite.title = geosite.title
             foundGeosite.description = geosite.description
-            foundGeosite.ightheme = geosite.ightheme
+            foundGeosite.landowner = geosite.landowner
+            foundGeosite.phone = geosite.phone
+            foundGeosite.drilling = geosite.drilling
+            foundGeosite.comment = geosite.comment
             foundGeosite.image = geosite.image
             foundGeosite.location = geosite.location
         }
@@ -59,6 +62,7 @@ class GeositeJSONStore(private val context: Context) : GeositeStore {
         geosites.remove(foundGeosite)
         serialize()
     }
+
     override suspend fun findById(id:Long) : GeositeModel? {
         val foundGeosite: GeositeModel? = geosites.find { it.id == id }
         return foundGeosite

@@ -9,11 +9,14 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 @Entity
-data class GeositeModel(@PrimaryKey(autoGenerate = true)var id: Long = 0,
+data class GeositeModel(@PrimaryKey(autoGenerate = true) var id: Long = 0,
                         var fbId: String = "",
                         var title: String = "",
                         var description: String = "",
-                        var ightheme: String = "",
+                        var landowner: String = "",
+                        var phone: String = "",
+                        var drilling: String = "",
+                        var comment: String = "",
                         var image: String = "",
                         @Embedded var location : Location = Location()): Parcelable
 

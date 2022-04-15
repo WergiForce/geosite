@@ -60,10 +60,14 @@ class GeositePresenter(private val view: GeositeView) {
     }
 
 
-    suspend fun doAddOrSave(title: String, description: String, ightheme: String) {
+    suspend fun doAddOrSave(title: String, description: String, landowner: String,
+                            phone: String, drilling: String, comment: String) {
         geosite.title = title
         geosite.description = description
-        geosite.ightheme = ightheme
+        geosite.landowner = landowner
+        geosite.phone = phone
+        geosite.drilling = drilling
+        geosite.comment = comment
         if (edit) {
             app.geosites.update(geosite)
         } else {
@@ -143,10 +147,14 @@ class GeositePresenter(private val view: GeositeView) {
         view.showGeosite(geosite)
     }
 
-    fun cacheGeosite (title: String, description: String, ightheme: String) {
-        geosite.title = title;
+    fun cacheGeosite (title: String, description: String, landowner: String,
+                      phone: String, drilling: String, comment: String) {
+        geosite.title = title
         geosite.description = description
-        geosite.ightheme = ightheme
+        geosite.landowner = landowner
+        geosite.phone = phone
+        geosite.drilling = drilling
+        geosite.comment = comment
     }
 
     private fun registerImagePickerCallback() {

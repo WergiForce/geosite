@@ -78,8 +78,6 @@ class GeositeListView : AppCompatActivity(), GeositeListener {
         presenter.doEditGeosite(geosite)
     }
 
-
-
     private fun updateRecyclerView(){
         GlobalScope.launch(Dispatchers.Main){
             binding.recyclerView.adapter =

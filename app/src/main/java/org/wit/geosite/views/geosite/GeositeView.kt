@@ -37,12 +37,24 @@ class GeositeView : AppCompatActivity() {
         presenter = GeositePresenter(this)
 
         binding.chooseImage.setOnClickListener {
-            presenter.cacheGeosite(binding.geositeTitle.text.toString(), binding.description.text.toString(), binding.ightheme.selectedItem.toString())
+            presenter.cacheGeosite(
+                binding.geositeTitle.text.toString(),
+                binding.description.text.toString(),
+                binding.landowner.text.toString(),
+                binding.phone.text.toString(),
+                binding.drilling.selectedItem.toString(),
+                binding.comment.text.toString())
             presenter.doSelectImage()
         }
 
         binding.mapView2.setOnClickListener {
-            presenter.cacheGeosite(binding.geositeTitle.text.toString(), binding.description.text.toString(), binding.ightheme.selectedItem.toString())
+            presenter.cacheGeosite(
+                binding.geositeTitle.text.toString(),
+                binding.description.text.toString(),
+                binding.landowner.text.toString(),
+                binding.phone.text.toString(),
+                binding.drilling.selectedItem.toString(),
+                binding.comment.text.toString())
             presenter.doSetLocation()
         }
 
@@ -54,10 +66,10 @@ class GeositeView : AppCompatActivity() {
         }
 
 
-        val spinner: Spinner = findViewById(R.id.ightheme)
+        val spinner: Spinner = findViewById(R.id.drilling)
         ArrayAdapter.createFromResource(
             this,
-            R.array.ighthemes,
+            R.array.todrill,
             android.R.layout.simple_spinner_item
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -88,7 +100,10 @@ class GeositeView : AppCompatActivity() {
                         presenter.doAddOrSave(
                             binding.geositeTitle.text.toString(),
                             binding.description.text.toString(),
-                            binding.ightheme.selectedItem.toString()
+                            binding.landowner.text.toString(),
+                            binding.phone.text.toString(),
+                            binding.drilling.selectedItem.toString(),
+                            binding.comment.text.toString()
                         )
                     }
                 }
