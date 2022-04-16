@@ -1,6 +1,5 @@
 package org.wit.geosite.models
 
-import android.net.Uri
 import android.os.Parcelable
 import androidx.room.Embedded
 import androidx.room.Entity

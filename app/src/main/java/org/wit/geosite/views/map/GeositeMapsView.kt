@@ -38,18 +38,20 @@ class GeositeMapView : AppCompatActivity() , GoogleMap.OnMarkerClickListener{
             }
         }
     }
+
     override fun onMarkerClick(marker: Marker): Boolean {
         GlobalScope.launch(Dispatchers.Main) {
             presenter.doMarkerSelected(marker)
         }
         return true
     }
+
     fun showGeosite(geosite: GeositeModel) {
         contentBinding.currentTitle.text = geosite.title
-        contentBinding.currentDescription.text = geosite.description
-        Picasso.get()
-            .load(geosite.image)
-            .into(contentBinding.imageView2)
+    //    contentBinding.currentDescription.text = geosite.description
+    //    Picasso.get()
+    //        .load(geosite.image)
+    //        .into(contentBinding.imageView2)
     }
 
     override fun onDestroy() {

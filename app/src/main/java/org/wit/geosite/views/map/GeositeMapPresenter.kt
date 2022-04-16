@@ -16,7 +16,7 @@ class GeositeMapPresenter(val view: GeositeMapView) {
 
     suspend fun doPopulateMap(map: GoogleMap) {
         map.uiSettings.setZoomControlsEnabled(true)
-        map.setOnMarkerClickListener(view)
+        //map.setOnMarkerClickListener(view)
         app.geosites.findAll().forEach {
             val loc = LatLng(it.location.lat, it.location.lng)
             val options = MarkerOptions().title(it.title).position(loc)
