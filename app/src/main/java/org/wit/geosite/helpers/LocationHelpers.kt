@@ -21,6 +21,7 @@ fun checkLocationPermissions(activity: Activity) : Boolean {
         return false
     }
 }
+
 @SuppressLint("RestrictedApi")
 fun createDefaultLocationRequest() : LocationRequest {
     val locationRequest = create().apply{

@@ -30,10 +30,12 @@ class LoginView : AppCompatActivity(){
             }
         }
     }
+
     fun showSnackBar(message: CharSequence){
         Snackbar.make(binding.root, message, Snackbar.LENGTH_LONG)
             .show()
     }
+
     fun showProgress() {
         binding.progressBar.visibility = View.VISIBLE
     }

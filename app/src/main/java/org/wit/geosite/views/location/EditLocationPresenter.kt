@@ -45,6 +45,5 @@ class EditLocationPresenter (val view: EditLocationView) {
     fun doUpdateMarker(marker: Marker) {
         val loc = LatLng(location.lat, location.lng)
         marker.snippet = "GPS : $loc"
-
     }
 }

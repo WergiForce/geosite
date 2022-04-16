@@ -4,6 +4,7 @@ import android.content.Context
 import com.google.firebase.database.*
 
 class GeositeFireStore(val context: Context) : GeositeStore {
+
     val geosites = ArrayList<GeositeModel>()
     lateinit var db: DatabaseReference
 

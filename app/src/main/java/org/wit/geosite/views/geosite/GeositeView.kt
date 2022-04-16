@@ -1,6 +1,5 @@
 package org.wit.geosite.views.geosite
 
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -64,7 +63,6 @@ class GeositeView : AppCompatActivity() {
             presenter.doConfigureMap(map)
             it.setOnMapClickListener { presenter.doSetLocation() }
         }
-
 
         val spinner: Spinner = findViewById(R.id.drilling)
         ArrayAdapter.createFromResource(

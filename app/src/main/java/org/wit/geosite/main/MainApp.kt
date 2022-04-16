@@ -2,7 +2,6 @@ package org.wit.geosite.main
 
 import android.app.Application
 import org.wit.geosite.models.*
-import org.wit.geosite.room.GeositeStoreRoom
 import timber.log.Timber
 import timber.log.Timber.i
 
