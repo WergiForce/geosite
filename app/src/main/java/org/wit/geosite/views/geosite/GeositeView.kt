@@ -124,6 +124,9 @@ class GeositeView : AppCompatActivity() {
     fun showGeosite(geosite: GeositeModel) {
         if (binding.geositeTitle.text.isEmpty()) binding.geositeTitle.setText(geosite.title)
         if (binding.description.text.isEmpty())  binding.description.setText(geosite.description)
+        if (binding.landowner.text.isEmpty())  binding.landowner.setText(geosite.landowner)
+        if (binding.phone.text.isEmpty())  binding.phone.setText(geosite.phone)
+        if (binding.comment.text.isEmpty())  binding.comment.setText(geosite.comment)
         if (geosite.image != "") {
             Picasso.get()
                 .load(geosite.image)
