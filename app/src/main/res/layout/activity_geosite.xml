@@ -12,7 +12,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="-16dp">
+        tools:layout_editor_absoluteX="-16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
@@ -30,14 +31,11 @@
                 app:titleTextColor="@color/colorPrimary" />
         </com.google.android.material.appbar.AppBarLayout>
 
-
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="490dp"
+            android:layout_height="1096dp"
             android:layout_alignTop="@+id/appBarLayout"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="148dp"
-            android:layout_marginBottom="-148dp">
+            android:layout_alignParentBottom="true">
 
             <EditText
                 android:id="@+id/geositeTitle"
@@ -146,17 +144,18 @@
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/drilling" />
+                app:layout_constraintTop_toBottomOf="@+id/comment" />
 
             <Spinner
                 android:id="@+id/drilling"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="135dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="268dp"
+                android:layout_marginTop="8dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="14sp"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/comment" />
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
 
             <TextView
                 android:id="@+id/lat"
