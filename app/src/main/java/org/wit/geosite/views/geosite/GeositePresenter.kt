@@ -35,7 +35,7 @@ class GeositePresenter(private val view: GeositeView) {
     private lateinit var mapIntentLauncher : ActivityResultLauncher<Intent>
     private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
     var edit = false;
-    private val location = Location(52.245696, -7.139102, 15f)
+    private val location = Location(53.335748, -6.235489, 15f)
 
     init {
 
