@@ -48,10 +48,6 @@ class GeositeMapView : AppCompatActivity() , GoogleMap.OnMarkerClickListener{
 
     fun showGeosite(geosite: GeositeModel) {
         contentBinding.currentTitle.text = geosite.title
-    //    contentBinding.currentDescription.text = geosite.description
-    //    Picasso.get()
-    //        .load(geosite.image)
-    //        .into(contentBinding.imageView2)
     }
 
     override fun onDestroy() {
@@ -78,6 +74,4 @@ class GeositeMapView : AppCompatActivity() , GoogleMap.OnMarkerClickListener{
         super.onSaveInstanceState(outState)
         contentBinding.mapView.onSaveInstanceState(outState)
     }
-
-
 }

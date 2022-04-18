@@ -35,7 +35,7 @@ class GeositePresenter(private val view: GeositeView) {
     private lateinit var mapIntentLauncher : ActivityResultLauncher<Intent>
     private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
     var edit = false;
-    private val location = Location(52.245696, -7.139102, 15f)
+    private val location = Location(53.335748, -6.235489, 15f)
 
     init {
 
@@ -47,8 +47,7 @@ class GeositePresenter(private val view: GeositeView) {
             edit = true
             geosite = view.intent.extras?.getParcelable("geosite_edit")!!
             view.showGeosite(geosite)
-        }
-        else {
+        } else {
 
             if (checkLocationPermissions(view)) {
                 doSetCurrentLocation()
@@ -58,7 +57,6 @@ class GeositePresenter(private val view: GeositeView) {
         }
 
     }
-
 
     suspend fun doAddOrSave(title: String, description: String, landowner: String,
                             phone: String, drilling: String, comment: String) {
@@ -75,18 +73,15 @@ class GeositePresenter(private val view: GeositeView) {
         }
 
         view.finish()
-
     }
 
     fun doCancel() {
         view.finish()
-
     }
 
     suspend fun doDelete() {
         app.geosites.delete(geosite)
         view.finish()
-
     }
 
     fun doSelectImage() {
@@ -132,6 +127,7 @@ class GeositePresenter(private val view: GeositeView) {
             locationService.requestLocationUpdates(locationRequest, locationCallback, null)
         }
     }
+
     fun doConfigureMap(m: GoogleMap) {
         map = m
         locationUpdate(geosite.location.lat, geosite.location.lng)
@@ -158,7 +154,6 @@ class GeositePresenter(private val view: GeositeView) {
     }
 
     private fun registerImagePickerCallback() {
-
         imageIntentLauncher =
             view.registerForActivityResult(ActivityResultContracts.StartActivityForResult())
             { result ->
@@ -172,7 +167,6 @@ class GeositePresenter(private val view: GeositeView) {
                     }
                     AppCompatActivity.RESULT_CANCELED -> { } else -> { }
                 }
-
             }
     }
 

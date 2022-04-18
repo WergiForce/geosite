@@ -46,7 +46,6 @@ class GeositeListView : AppCompatActivity(), GeositeListener {
         }
     }
 
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
@@ -59,7 +58,6 @@ class GeositeListView : AppCompatActivity(), GeositeListener {
         i("recyclerView onResume")
 
     }
-
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {

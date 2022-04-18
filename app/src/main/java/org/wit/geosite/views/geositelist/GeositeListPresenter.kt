@@ -41,6 +41,7 @@ class GeositeListPresenter(val view: GeositeListView) {
         val launcherIntent = Intent(view, GeositeMapView::class.java)
         editIntentLauncher.launch(launcherIntent)
     }
+
     private fun registerRefreshCallback() {
         refreshIntentLauncher =
             view.registerForActivityResult(ActivityResultContracts.StartActivityForResult())
@@ -50,6 +51,7 @@ class GeositeListPresenter(val view: GeositeListView) {
                 }
             }
     }
+
     private fun registerEditCallback() {
         editIntentLauncher =
             view.registerForActivityResult(ActivityResultContracts.StartActivityForResult())
