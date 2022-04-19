@@ -39,3 +39,18 @@ Logout will log out the user and clear the Geosite List, which will be repopulat
 
 Drillers can then revisit sites and coordinate with landowners for visits. There is a drop down menu that the driller can then use to indicate whether
 the site will be suitable or not.
+
+#### Setup
+
+Within the GitHub repo for this application you can find almost all the code required to run this application, though some dependencies are missing as
+these will be unique to whoever is setting up the application. To get started, an API Key must be obtained for Google Maps to work in the app. This
+can be obtained by following the instructions outlined here: https://developers.google.com/maps/documentation/android-sdk/start#get-key
+
+This key will need to be entered either directly into the AndroidMaifest within the metadata tag (in place of the @string/google_maps_key) or create
+a google_maps_api.xml resource file.
+
+Secondly, a Firebase account must be created at firebase.google.com , create a project and activate Authentication (Email and Password), Realtime Database
+and Storage (ensuring that the rules applied to these allow for both read and write access) and then download the google-services.json file and place it in
+the app folder of the project. Firebase can then be linked in the app using the built in Firebase options in Android Studio Tools. Lastly, one line of code
+may need to be changed, line 69 within the GeositeFireStore model contains a link, please ensure that this link matches that shown at the top of your Realtime
+Database.
