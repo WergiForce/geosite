@@ -54,3 +54,7 @@ and Storage (ensuring that the rules applied to these allow for both read and wr
 the app folder of the project. Firebase can then be linked in the app using the built in Firebase options in Android Studio Tools. Lastly, one line of code
 may need to be changed, line 69 within the GeositeFireStore model contains a link, please ensure that this link matches that shown at the top of your Realtime
 Database.
+
+### Presentation Slides
+
+<iframe src="https://onedrive.live.com/embed?cid=893F6A1E1B1EB7F7&amp;resid=893F6A1E1B1EB7F7%217553&amp;authkey=AG6-5qOflM8537g&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
